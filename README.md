@@ -1,4 +1,4 @@
-# TFDet
+# TFDet: Target-aware Fusion for RGB-T Pedestrian Detection
 * This is an official repository of our TFDet, which is submitted to ICCV 2023.
 * TFDet is an abbreviation for "Target-aware Fusion for RGB-T Pedestrian Detection."
 * Our TFDet aims to highlight the feature representation of pedestrians while suppressing the background areas. 
