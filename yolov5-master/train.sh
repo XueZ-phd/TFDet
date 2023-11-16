@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=5,7 python -m torch.distributed.run --master_port 1224 --nproc_per_node 2 train.py --device 0,1 --batch-size 6 --imgsz 1280 --data LLVIP.yaml --epochs 30 --cfg yolov5l_RGBT.yaml --weights yolov5l.pt --name modifiedDCN_MaskSup_negCorr_1280 --exist-ok --sync-bn
