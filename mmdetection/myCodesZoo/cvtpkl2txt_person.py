@@ -20,8 +20,8 @@ show_epoch = not 'epoch_3.pth'
 pkl_root = '../runs/FasterRCNN_vgg16_channelRelation_dscSEFusion_similarityMax_1'
 score_thres = 0.0
 aspect_ratio_thres = 1.0
-start_epoch = 1
-end_epoch = 100
+start_epoch = 3
+end_epoch = 4
 nms_thres = None
 
 test_dict = {}

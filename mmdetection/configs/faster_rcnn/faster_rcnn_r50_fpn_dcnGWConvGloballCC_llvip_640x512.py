@@ -35,7 +35,7 @@ norm_cfg = dict(type='SyncBN', requires_grad=True)
 # norm_cfg = dict(type='BN', requires_grad=True)
 
 model = dict(
-    type='FasterRCNN_RGBTwMask_wSpaAttV5',
+    type='FasterRCNN_RGBTwMask_wSpaAttV6',
     share_weights=dict(backbone=True),
     backbone=dict(
         type='ResNet',
@@ -237,21 +237,21 @@ data = dict(
         type=dataset_type,
         ann_file=f'{data_root}/{modality}_train.json',
         classes=classes,
-        img_prefix='',
+        img_prefix=None,
         pipeline=train_pipeline,
         filter_empty_gt=False),
     val=dict(
         type=dataset_type,
         ann_file=f'{data_root}/{modality}_test.json',
         classes=classes,
-        img_prefix='',
+        img_prefix=None,
         pipeline=test_pipeline,
         filter_empty_gt=False),
     test=dict(
         type=dataset_type,
         ann_file=f'{data_root}/{modality}_test.json',
         classes=classes,
-        img_prefix='',
+        img_prefix=None,
         pipeline=test_pipeline,
         filter_empty_gt=False))
 evaluation = dict(interval=1, metric='bbox', classwise=True)

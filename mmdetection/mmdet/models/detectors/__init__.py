@@ -62,6 +62,7 @@ from .my_faster_rcnn_mask_supervised_spatialAttention_v2_replaceFFMwithCatConv i
 from .yolox_RGBT import YOLOX_RGBT
 from .my_faster_rcnn_mask_supervised_spatialAttention_v4 import FasterRCNN_RGBTwMask_wSpaAttV4
 from .my_faster_rcnn_mask_supervised_spatialAttention_v5 import FasterRCNN_RGBTwMask_wSpaAttV5
+from .my_faster_rcnn_mask_supervised_spatialAttention_v6 import FasterRCNN_RGBTwMask_wSpaAttV6
 # from .cascade_rcnn_RGBT import CascadeRCNN_RGBT
 
 __all__ = [
