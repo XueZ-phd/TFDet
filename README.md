@@ -125,9 +125,14 @@ Then, you will obtain a folder ``runs/FasterRCNN_vgg16_channelRelation_dscSEFusi
  
 Finally, you will get the result:
 
-|MR-All($\downarrow$)|MR-Day($\downarrow$)|MR-Night($\downarrow$)|MR-Near($\downarrow$)|MR-Medium($\downarrow$)|MR-Far($\downarrow$)|
-|:---|:---|:---|:---|:---|:---|
-|4.47|5.22|3.36|0.00|9.29|55.50|
+|Methods|MR-All($\downarrow$)|MR-Day($\downarrow$)|MR-Night($\downarrow$)|MR-Near($\downarrow$)|MR-Medium($\downarrow$)|MR-Far($\downarrow$)|
+|:---|:---|:---|:---|:---|:---|:---|
+|MSR (AAAI 2022)|11.39|15.28|6.48|-|-|-|
+|AR-CNN (ICCV 2019)|9.34|9.94|8.38|0.00|16.08|69.00|
+|MBNet (ECCV2020)|8.13|8.28|7.86|0.00|16.07|55.99|
+|DCMNet (ACM MM 2022)|5.84|6.48|4.60|0.02|16.07|69.70|
+|ProbEn3 (ECCV 2022)|5.14|6.04|3.59|0.00|9.59|41.92|
+|TFDet (Ours)|**4.47**|**5.22**|**3.36**|**0.00**|**9.29**|55.50|
 
 <div align='left'>
 <img src='misc/fppi_wrt_mr_curve.png' />
@@ -156,10 +161,13 @@ For MMDetection, we evaluate TFDet at two resolutions. Since the LLVIP dataset h
 	CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8 PORT=29500 bash tools/zx_dist_test_llvip_1024x1280.sh 8 --eval bbox
 Then, you will get:
 
-|Resolution|AP.50($\uparrow$)|AP($\uparrow$)|
-|:---------|:---|:--|
-|640 x 512|95.7|56.1|
-|1280 x 1024|96.0|59.4|
+|Methods|Resolution|AP.50($\uparrow$)|AP($\uparrow$)|
+|:----|:---------|:---|:--|
+|DetFusion (ACM MM 2022)|640 x 512|80.7|-|
+ProbEn (ECCV2022)|640 x 512|93.4|51.5|
+|TFDet (Ours)|640 x 512|95.7|56.1|
+|DCMNet (ACM MM 2022)|1280 x 1024|-|58.4|
+|TFDet (Ours)|1280 x 1024|96.0|59.4|
 
 For YOLOv5, 
 
@@ -167,9 +175,11 @@ For YOLOv5,
 	
 Finally, you will get:
 	
-|AP.50($\uparrow$)|AP.75($\uparrow$)|AP($\uparrow$)|
-|:----|:----|:--|
-|97.9|83.4|71.1|
+|Methods|AP.50($\uparrow$)|AP.75($\uparrow$)|AP($\uparrow$)|
+|:---|:----|:----|:--|
+|RGB (ICCV 2021)|90.8|56.4|52.7|
+|Thermal (ICCV 2021)|96.5|76.4|67.0|
+|TFDet (Ours)|97.9|83.4|71.1|
 
 
 ## Citation
