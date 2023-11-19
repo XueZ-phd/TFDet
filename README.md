@@ -152,10 +152,10 @@ For MMDetection, we evaluate TFDet at two resolutions. Since the LLVIP dataset h
 	CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8 PORT=29500 bash tools/zx_dist_test_llvip_1024x1280.sh 8 --eval bbox
 Then, you will get:
 
-	|Resolution|AP.50|AP|
-	|:---------|:---|:--|
-	|640 x 512|95.7|56.1|
-	|1280 x 1024|96.0|59.4|
+|Resolution|AP.50|AP|
+|:---------|:---|:--|
+|640 x 512|95.7|56.1|
+|1280 x 1024|96.0|59.4|
 
 For YOLOv5, 
 
@@ -163,9 +163,9 @@ For YOLOv5,
 	
 Finally, you will get:
 	
-	|AP.50|AP.75|AP|
-	|:----|:----|:--|
-	|97.9|83.4|71.1|
+|AP.50|AP.75|AP|
+|:----|:----|:--|
+|97.9|83.4|71.1|
 
 
 ## Citation
