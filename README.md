@@ -166,9 +166,9 @@ Then, you will get:
 |:----|:---------|:---|:--|
 |DetFusion (ACM MM 2022)|640 x 512|80.7|-|
 ProbEn (ECCV2022)|640 x 512|93.4|51.5|
-|TFDet (Ours)|640 x 512|95.7|56.1|
+|TFDet (Ours)|640 x 512|**95.7**|**56.1**|
 |DCMNet (ACM MM 2022)|1280 x 1024|-|58.4|
-|TFDet (Ours)|1280 x 1024|96.0|59.4|
+|TFDet (Ours)|1280 x 1024|96.0|**59.4**|
 
 For YOLOv5, 
 
@@ -180,7 +180,7 @@ Finally, you will get:
 |:---|:----|:----|:--|
 |RGB (ICCV 2021)|90.8|56.4|52.7|
 |Thermal (ICCV 2021)|96.5|76.4|67.0|
-|TFDet (Ours)|97.9|83.4|71.1|
+|TFDet (Ours)|**97.9**|**83.4**|**71.1**|
 
 
 ## Citation
