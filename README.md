@@ -7,7 +7,7 @@
 # TFDet: Target-aware Fusion for RGB-T Pedestrian Detection
 
 <div align='left'>
-<img src='/misc/fusionMethodAndFeatureComparison.png' width=90% />
+<img src='/misc/fusionMethodAndFeatureComparison.png' />
 </div>
 
 **This is the official repository for our paper "TFDet: Target-aware Fusion for RGB-T Pedestrian Detection" (<u>[arxiv paper link](https://arxiv.org/abs/2305.16580)</u>).**
