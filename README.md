@@ -123,7 +123,11 @@ Then, you will obtain a folder ``runs/FasterRCNN_vgg16_channelRelation_dscSEFusi
 
 	run demo_test.m
  
-Finally, you will get the result: ``MR_all: 4.47, MR_day: 5.22, and MR_night: 3.36``
+Finally, you will get the result:
+
+|MR-All($\downarrow$)|MR-Day($\downarrow$)|MR-Night($\downarrow$)|MR-Near($\downarrow$)|MR-Medium($\downarrow$)|MR-Far($\downarrow$)|
+|:---|:---|:---|:---|:---|:---|
+|4.47|5.22|3.36|0.00|9.29|55.50|
 
 <div align='left'>
 <img src='misc/fppi_wrt_mr_curve.png' />
