@@ -126,14 +126,14 @@ Then, you will obtain a folder ``runs/FasterRCNN_vgg16_channelRelation_dscSEFusi
  
 Finally, you will get the result:
 
-|Methods|MR-All($\downarrow$)|MR-Day($\downarrow$)|MR-Night($\downarrow$)|MR-Near($\downarrow$)|MR-Medium($\downarrow$)|MR-Far($\downarrow$)|
-|:---|:---|:---|:---|:---|:---|:---|
-|MSR (AAAI 2022)|11.39|15.28|6.48|-|-|-|
-|AR-CNN (ICCV 2019)|9.34|9.94|8.38|0.00|16.08|69.00|
-|MBNet (ECCV2020)|8.13|8.28|7.86|0.00|16.07|55.99|
-|DCMNet (ACM MM 2022)|5.84|6.48|4.60|0.02|16.07|69.70|
-|ProbEn3 (ECCV 2022)|5.14|6.04|3.59|0.00|9.59|41.92|
-|TFDet (Ours)|**4.47**|**5.22**|**3.36**|**0.00**|**9.29**|55.50|
+|Methods|MR-All($\downarrow$)|MR-Day($\downarrow$)|MR-Night($\downarrow$)|MR-Near($\downarrow$)|MR-Medium($\downarrow$)|
+|:---|:---|:---|:---|:---|:---|
+|MSR (AAAI 2022)|11.39|15.28|6.48|-|-|
+|AR-CNN (ICCV 2019)|9.34|9.94|8.38|0.00|16.08|
+|MBNet (ECCV2020)|8.13|8.28|7.86|0.00|16.07|
+|DCMNet (ACM MM 2022)|5.84|6.48|4.60|0.02|16.07|
+|ProbEn3 (ECCV 2022)|5.14|6.04|3.59|0.00|9.59|
+|TFDet (Ours)|**4.47**|**5.22**|**3.36**|**0.00**|**9.29**|
 
 <div align='left'>
 <img src='misc/fppi_wrt_mr_curve.png' />
