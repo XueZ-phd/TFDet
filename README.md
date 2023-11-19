@@ -184,7 +184,7 @@ Finally, you will get:
 
 
 ## Citation
-If you find our TFDet useful, please cite this paper:
+If you find our TFDet useful, please cite our paper:
 
 	@article{tfdet,
 	title={TFDet: Target-aware Fusion for RGB-T Pedestrian Detection},
