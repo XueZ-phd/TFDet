@@ -102,6 +102,8 @@ In our environment, we use:
 - If you solely intend to assess the inference results, feel free to download the following files: ``images/test.zip``, ``annotations.zip`` and ``coco_format.zip``.
 
 ### Inference
+**Note**: the ``data_root`` and ``img_prefix`` in configuration files should be correctly modified according to your local dataset path. Please refer to the [mmdetection document](https://mmdetection.readthedocs.io/en/latest/) for more details.
+
 Since the KAIST dataset is evaluated by the `log-average miss rate` metric, we should run three files: ``mmdetection/tools/test.py``, ``mmdetection/myCodesZoo/cvtpkl2txt_person.py``, and ``KAISTdevkit-matlab-wrapper/demo_test.m``.
 
 We should first run the ``tools/test.py`` to generate the detection results.
