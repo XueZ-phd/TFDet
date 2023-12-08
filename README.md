@@ -29,59 +29,58 @@
 
 **In the <u>[cloud link](https://pan.baidu.com/s/1ut90qAY9RAo34EHo52hRUw)</u>, files are organized as follow:**
 
-	TFDet----------------------------------
-		|--yolov5-master
-			|--runs								# For yolov5-llvip
-				|--train
-					|--modifiedDCN_MaskSup_negCorr_1024
-						|--weights
-							|--best.pt
-		|--mmdetection
-			|--runs_llvip						# For faster-rcnn-r50-llvip
-				|--FasterRCNN_r50wMask_ROIFocalLoss5_CIOU20_cosineSE_dcnGWConvGlobalCC_1024x1280
-					|--epoch_7.pth
-					|--20230825_171907.log
-					|--20230825_171907.log.json
-			|--runs								# For faster-rcnn-v16-kaist
-				|--FasterRCNN_vgg16_channelRelation_dscSEFusion_similarityMax_1
-					|--epoch_
-						|--epoch_3-test-all.txt
-						|--epoch_3-test-day.txt
-						|--epoch_3-test-night.txt
-					|--epoch_3.pth
-					|--epoch_3.pkl
-		|--datasets
-			|--kaist
-				|--zx-sanitized-kaist-keepPerson-fillNonPerson
-					|--images
-						|--test.zip
-						|--train_lwir.zip
-						|--train_visible.zip
-					|--annotations.zip
-					|--coco_format.zip
-					|--test.avi
-					|--train.avi
-			|--LLVIP
-				|--LLVIP
-					|--coco_format
-					|--lwir
-					|--visible
-				|--yolov5_format
-					|--images
-						|--lwir
-							|--train
-							|--test
-						|--visible
-							|--train
-							|--test
-					|--labels
-						|--lwir
-							|--train
-							|--test
-						|--visible
-							|--train
-							|--test
-	
+	TFDet:
+	├─datasets
+	│  ├─kaist
+	│  │  └─zx-sanitized-kaist-keepPerson-fillNonPerson
+	│  │      ├─annotations.zip
+	│  │      ├─coco_format.zip
+	│  │      ├─images
+	│  │      │  ├─test.zip
+	│  │      │  ├─train_lwir.zip
+	│  │      │  └─train_visible.zip
+	│  │      ├─test.avi
+	│  │      └─train.avi
+	│  └─LLVIP
+	│      ├─LLVIP
+	│      │  ├─coco_format
+	│      │  ├─lwir
+	│      │  └─visible
+	│      └─yolov5_format
+	│          ├─images
+	│          │  ├─lwir
+	│          │  │  ├─test
+	│          │  │  └─train
+	│          │  └─visible
+	│          │      ├─test
+	│          │      └─train
+	│          └─labels
+	│              ├─lwir
+	│              │  ├─test
+	│              │  └─train
+	│              └─visible
+	│                  ├─test
+	│                  └─train
+	├─mmdetection
+	│  ├─runs
+	│  │  └─FasterRCNN_vgg16_channelRelation_dscSEFusion_similarityMax_1
+	│  │      ├─epoch_
+	│  │      │  ├─epoch_3-test-all.txt
+	│  │      │  ├─epoch_3-test-day.txt
+	│  │      │  └─epoch_3-test-night.txt
+	│  │      ├─epoch_3.pkl
+	│  │      └─epoch_3.pth
+	│  └─runs_llvip
+	│      └─FasterRCNN_r50wMask_ROIFocalLoss5_CIOU20_cosineSE_dcnGWConvGlobalCC_1024x1280
+	│          ├─20230825_171907.log
+	│          ├─20230825_171907.log.json
+	│          └─epoch_7.pth
+	└─yolov5-master
+	    └─runs
+	        └─train
+	            └─modifiedDCN_MaskSup_negCorr_1024
+	                └─weights
+	                    └─best.pt
 
 
 ## KAIST
