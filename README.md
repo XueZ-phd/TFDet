@@ -41,12 +41,12 @@
 	│  │      │  └─train_visible.zip
 	│  │      ├─test.avi
 	│  │      └─train.avi
-	│  └─LLVIP
+	│  └─LLVIP		# LLVIP should be downloaded here
 	│      ├─LLVIP
-	│      │  ├─coco_format
+	│      │  ├─coco_format	# For mmdetection
 	│      │  ├─lwir
 	│      │  └─visible
-	│      └─yolov5_format
+	│      └─yolov5_format	# For yolov5
 	│          ├─images
 	│          │  ├─lwir
 	│          │  │  ├─test
